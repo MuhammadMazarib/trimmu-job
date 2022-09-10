@@ -29,7 +29,7 @@ export default function CharactersList() {
 
     const [searchTerm, setSearchTerm]=useState('');
     console.log(data)
-    if(loading) return<div>sssss</div>
+    if(loading) return<div className='loading'>Loading...</div>
     if(error) return<div>errrrr</div>
    
 
