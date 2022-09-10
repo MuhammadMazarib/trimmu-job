@@ -36,7 +36,7 @@ export default function CharactersList() {
     return (
       <>
       <div className='padmarg'>
-      <header>
+      <header className="header">
       <div className="overlay">
     <h1>Trimu Labs</h1>
     <h5>Job Portal</h5>
@@ -52,7 +52,7 @@ export default function CharactersList() {
 
     
     
- {data.jobs.map(createCard)};
+ {data.jobs?.filter(job => job.title?.toLowerCase()?.includes(searchTerm?.toLowerCase()) || job.company?.name?.toLowerCase()?.includes(searchTerm?.toLowerCase()))?.map(createCard)};
     
  
          
