@@ -26,9 +26,16 @@ function Card(props) {
 
 
         <div class="column" >
-        <div><h4> Company Name:</h4>{props.name} <h3>{props.isPublished}</h3></div>
+        <div><h4> Company Name:</h4>{props.name} 
+        <h3>{props.isPublished}</h3></div>
+        <div>
+          <h5>Published: </h5>
+          {props.isPublished ?  "Yes": "No"}
+        </div>
         <div><h4>Email:</h4>
-        {props.userEmail ?  props.userEmail: "Nil"}</div>
+        
+        {props.userEmail ?  props.userEmail: "Nil"}
+        </div>
         
         <a href={props.applyUrl} target="_blank" rel="noreferrer">
           <Button>Apply</Button>
