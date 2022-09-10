@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-import CharactersList from './pages/CharactersList';
-import { Route, Router, Routes } from "react-router";
-import Character from './pages/Character';
+import JobList from './pages/JobList';
+import { Route, Routes } from "react-router";
+
 
 
 
@@ -13,7 +12,7 @@ function App() {
     <>
     <div className="App">
       <Routes>
-        <Route path="/" element={<CharactersList/>}/>
+        <Route path="/" element={<JobList/>}/>
       </Routes>
     </div>
  

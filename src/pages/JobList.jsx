@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { useCharacters } from '../hooks/useCharacters';
+import { useCharacters } from '../hooks/useJobs';
 
-import "./CharacterList.css"
+import "./JobList.css"
 import Card from './cards';
 
 const MyName = " Muhammad Mazarib";
