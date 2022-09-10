@@ -52,7 +52,7 @@ export default function CharactersList() {
 
     
     
- {data.jobs?.filter(job => job.title?.toLowerCase()?.includes(searchTerm?.toLowerCase()) || job.company?.name?.toLowerCase()?.includes(searchTerm?.toLowerCase()))?.map(createCard)};
+ {data.jobs?.filter(job => job.title?.toLowerCase()?.includes(searchTerm?.toLowerCase()) || job.company?.name?.toLowerCase()?.includes(searchTerm?.toLowerCase()))?.map(createCard)}
     
  
          

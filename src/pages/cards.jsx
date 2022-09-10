@@ -27,7 +27,7 @@ function Card(props) {
 
         <div class="column" >
         <div><h4> Company Name:</h4>{props.name} 
-        <h3>{props.isPublished}</h3></div>
+        </div>
         <div>
           <h5>Published: </h5>
           {props.isPublished ?  "Yes": "No"}
